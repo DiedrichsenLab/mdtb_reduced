@@ -2,19 +2,32 @@
 from pathlib import Path
 import os
 
-response_keys = ['d', 'f', 'j', 'k']
+response_keys = ['a', 's', 'd', 'f', 'j', 'k', 'l', ';']
 
 # assign keys to hands
-key_hand_dict = {
-    'right': {    # right hand
-        True:  [response_keys[2], 'Index'], # index finger
-        False: [response_keys[3], 'Middle'],  # middle finger
-        },
-    'left': {   # left hand
-        False:[response_keys[0], 'Middle'], # index finger
-        True: [response_keys[1], 'Index'],  # middle finger
-        },
-    } 
+key_hand_dict_binary_right = {
+        True:  [response_keys[4], 'Index'], # index finger
+        False: [response_keys[5], 'Middle'],  # middle finger
+    }
+    
+key_hand_dict_binary_left = {
+        False: [response_keys[2], 'Middle'], # index finger
+        True:  [response_keys[3], 'Index'],  # middle finger
+    }
+
+key_hand_dict_sequence_right = {
+        1: [response_keys[4], 'Index'], # index finger
+        2: [response_keys[5], 'Middle'],  # middle finger
+        3: [response_keys[6], 'Ring'], # ring finger
+        4: [response_keys[7], 'Pinky'],  # pinky finger
+    }
+    
+key_hand_dict_sequence_left = {
+        4: [response_keys[0], 'Pinky'], # pinky finger
+        3: [response_keys[1], 'Ring'],  # ring finger
+        2: [response_keys[2], 'Middle'], # middle finger
+        1: [response_keys[3], 'Index'],  # index finger
+    }    
 
 base_dir   = Path(__file__).absolute().parent.parent
 stim_dir   = base_dir / "stimuli"
