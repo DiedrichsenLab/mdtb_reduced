@@ -1,0 +1,5 @@
+,cloze_probability,dataset,CoRT_mean,CoRT_std,CoRT_descript,target_word,random_word,word_count,cloze_descript,stim,condition_name,stem_word_dur,last_word_dur,trial_dur_correct,display_trial_feedback,trial_type,last_word,hand,iti_dur,key_hand_dict,start_time,trial_dur
+0,0.48,peele,1.25,0.5,strong non-CoRT,mean,view,7,low cloze,Isaac didn't know what her behavior could,hard,0.5,1.5,5.5,True,False,view,right,0.5,key_hand_dict_binary_right,0.0,7
+1,0.9,block_baldwin,1.2857142857142858,0.4879500364742666,strong non-CoRT,prince,awoke,8,high cloze,The princess was only permitted to marry a,easy,0.5,1.5,6.0,True,False,awoke,right,0.5,key_hand_dict_binary_right,7.5,7
+2,0.83,peele,4.2,1.3038404810405295,strong CoRT,number,pull,9,high cloze,Hank won the dice game by rolling a specific,easy,0.5,1.5,6.5,True,True,number,right,0.5,key_hand_dict_binary_right,15.0,7
+3,0.45,peele,4.4,0.8944271909999157,strong CoRT,hose,bear,7,low cloze,Andrea watered her garden with a small,hard,0.5,1.5,5.5,True,True,hose,right,0.5,key_hand_dict_binary_right,22.5,7

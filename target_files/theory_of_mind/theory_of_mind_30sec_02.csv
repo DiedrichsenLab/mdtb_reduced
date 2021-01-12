@@ -1,0 +1,18 @@
+,story,question,filename,condition,response,condition_name,story_dur,question_dur,trial_dur_correct,display_trial_feedback,trial_type,hand,iti_dur,key_hand_dict,start_time,trial_dur
+0,"The Nelson Pillar was a granite pillar
+that was erected by the British in Dublin.
+In 1966 it was destroyed by the Irish
+republicans. Today the Spire of Dublin
+stands on its former ground.","Today, the Nelson Pillar
+stands tall in Dublin
+
+False or True?",23p,photo,False,photo,10,4,14.5,True,False,left,0.5,key_hand_dict_binary_left,0.0,14
+1,"Sally attends the high-school production
+of ""Romeo and Juliet"" to support her
+sister who is playing the role of 
+Juliet. Before the play begins, Sally
+receives an urgent phone call and
+leaves the theater, missing the show. ","Sally misses the production
+of ""Romeo and Juliet""
+
+False or True?",24p,photo,True,photo,10,4,14.5,True,True,left,0.5,key_hand_dict_binary_left,14.5,14

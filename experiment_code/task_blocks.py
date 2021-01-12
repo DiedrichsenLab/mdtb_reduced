@@ -39,8 +39,10 @@ class Task:
     def instruction_text(self):
         # return None
         hand = self.target_file['hand'][0]
-        return f"{self.task_name} task\n\nUse your {hand} hand\n\nIf true, press {consts.key_hand_dict[hand][True][0]} with {consts.key_hand_dict[hand][True][1]}\nIf false, press {consts.key_hand_dict[hand][False][0]} with {consts.key_hand_dict[hand][False][1]}"
-    
+        key_hand_dict = self.target_file['key_hand_dict'][0]
+        #return f"{self.task_name} task\n\nUse your {hand} hand\n\nIf true, press {consts.key_hand_dict[hand][True][0]} with {consts.key_hand_dict[hand][True][1]}\nIf false, press {consts.key_hand_dict[hand][False][0]} with {consts.key_hand_dict[hand][False][1]}"
+        return f"{self.task_name} task\n\nUse your {hand} hand\n\nIf true, press {key_hand_dict[True][0]} with {key_hand_dict[True][1]}\nIf false, press {key_hand_dict[False][0]} with {key_hand_dict[False][1]}"
+
     def get_resp_df(self, all_trial_response):
         """
         get the responses made for the task and convert it to a dataframe
@@ -64,7 +66,8 @@ class Task:
 
     def get_correct_key(self, trial_index):
         row = self.target_file.iloc[trial_index]
-        return consts.key_hand_dict[row['hand']][row['trial_type']][0]
+        #return consts.key_hand_dict[row['hand']][row['trial_type']][0]
+        return key_hand_dict[row['trial_type']][0]
 
     def display_feedback(self, feedback_text):
         feedback = visual.TextStim(self.window, text=feedback_text, color=[-1, -1, -1])

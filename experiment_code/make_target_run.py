@@ -46,6 +46,7 @@ class VisualSearch(Utils):
         self.iti_dur = .5
         self.instruct_dur = 5
         self.hand = 'right'
+        self.key_hand_dict = 'key_hand_dict_binary_right'
         self.replace = False
         self.display_trial_feedback = True
     
@@ -222,6 +223,7 @@ class NBack(Utils):
         self.iti_dur = .5
         self.instruct_dur = 5
         self.hand = 'left'
+        self.key_hand_dict = 'key_hand_dict_binary_left'
         self.replace = False
         self.display_trial_feedback = True
     
@@ -352,6 +354,7 @@ class SocialPrediction(Utils):
         self.iti_dur = .5
         self.instruct_dur = 5
         self.hand = 'right'
+        self.key_hand_dict = 'key_hand_dict_binary_right'
         self.replace = False 
         self.display_trial_feedback = True
 
@@ -495,6 +498,7 @@ class SemanticPrediction(Utils):
         self.iti_dur = .5
         self.instruct_dur = 5
         self.hand = 'right'
+        self.key_hand_dict = 'key_hand_dict_binary_right'
         self.replace = False
         self.display_trial_feedback = True
 
@@ -640,6 +644,7 @@ class ActionObservation(Utils):
         self.iti_dur = .5
         self.instruct_dur = 5
         self.hand = 'left'
+        self.key_hand_dict = 'key_hand_dict_binary_left'
         self.replace = True # sample with or without replacement
         self.display_trial_feedback = True
 
@@ -844,6 +849,7 @@ class TheoryOfMind(Utils):
         self.iti_dur = .5
         self.instruct_dur = 5
         self.hand = 'left'
+        self.key_hand_dict = 'key_hand_dict_binary_left'
         self.replace = False
         self.display_trial_feedback = True
 

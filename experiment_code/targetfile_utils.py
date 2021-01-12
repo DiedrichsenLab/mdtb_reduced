@@ -61,12 +61,12 @@ class Utils():
         df_target = df_target.sample(n=len(df_target), random_state=self.random_state, replace=False)
 
         start_time = np.round(np.arange(0, self.num_trials*(self.trial_dur+self.iti_dur), self.trial_dur+self.iti_dur), 1)
-        data = {"trial_dur":self.trial_dur, "iti_dur":self.iti_dur, "start_time":start_time, "hand": self.hand}
+        data = {"trial_dur":self.trial_dur, "iti_dur":self.iti_dur, "start_time":start_time, "hand": self.hand, "key_hand_dict": self.key_hand_dict}
 
         df_target = pd.concat([df_target, pd.DataFrame.from_records(data)], axis=1, ignore_index=False, sort=False)
 
         # get targetfile name
-        tf_name = f"{self.block_name}_{self.block_dur_secs}sec" # was {self.num_trials}trials
+        tf_name = f"{self.task_name}_{self.block_dur_secs}sec" # was {self.num_trials}trials
         tf_name = self._get_target_file_name(tf_name)
 
         # save out dataframe to a csv file in the target directory (TARGET_DIR)

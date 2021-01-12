@@ -1,0 +1,5 @@
+,cloze_probability,dataset,CoRT_mean,CoRT_std,CoRT_descript,target_word,random_word,word_count,cloze_descript,stim,condition_name,stem_word_dur,last_word_dur,trial_dur_correct,display_trial_feedback,trial_type,last_word,hand,iti_dur,key_hand_dict,start_time,trial_dur
+0,0.31,peele,1.6666666666666667,0.5773502691896257,strong non-CoRT,apple,fuss,7,low cloze,Andrew's favorite type of fruit is the,hard,0.5,1.5,5.5,True,True,apple,right,0.5,key_hand_dict_binary_right,0.0,7
+1,0.41,peele,4.0,1.1547005383792517,strong CoRT,trail,dress,7,low cloze,Before descending the canyon we hiked the,hard,0.5,1.5,5.5,True,False,dress,right,0.5,key_hand_dict_binary_right,7.5,7
+2,0.8,block_baldwin,4.0,1.2909944487358056,strong CoRT,break,pan,5,high cloze,Catherine jogged during her lunch,easy,0.5,1.5,4.5,True,True,break,right,0.5,key_hand_dict_binary_right,15.0,7
+3,0.91,peele,2.0,0.8164965809277259,strong non-CoRT,sin,curb,9,high cloze,Steven had been raised believing that lying was a,easy,0.5,1.5,6.5,True,False,curb,right,0.5,key_hand_dict_binary_right,22.5,7

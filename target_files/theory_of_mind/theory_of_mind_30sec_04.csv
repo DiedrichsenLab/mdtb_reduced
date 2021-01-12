@@ -1,0 +1,18 @@
+,story,question,filename,condition,response,condition_name,story_dur,question_dur,trial_dur_correct,display_trial_feedback,trial_type,hand,iti_dur,key_hand_dict,start_time,trial_dur
+0,"Sally and Greg called ahead of time to make 
+a reservation for the back-country cabin. 
+The park ranger forgot to write down the 
+reservation and two other hikers got to the 
+cabin first.","When the hikers arrive they see no 
+one in their cabin.
+
+False or True? ",7b,belief,False,belief,10,4,14.5,True,False,left,0.5,key_hand_dict_binary_left,0.0,14
+1,"Felicity skips school to attend
+a basketball game at the local
+stadium. Unbeknownst to her, she
+is filmed by a news station. Her
+parents watch the news that afternoon
+and see her enjoying the game","Felicity's parents think that 
+she is at school
+
+False or True?",26b,belief,True,belief,10,4,14.5,True,True,left,0.5,key_hand_dict_binary_left,14.5,14
