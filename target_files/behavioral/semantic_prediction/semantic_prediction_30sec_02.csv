@@ -1,5 +1,5 @@
-,cloze_probability,dataset,CoRT_mean,CoRT_std,CoRT_descript,target_word,random_word,word_count,cloze_descript,stim,condition_name,stem_word_dur,last_word_dur,trial_dur_correct,display_trial_feedback,trial_type,last_word,hand,iti_dur,start_time,trial_dur
-0,0.96,peele,1.75,0.957427107756338,strong non-CoRT,wear,leak,8,high cloze,"Before the gala, Katie couldn't decide what to",easy,0.5,1.5,6.0,True,True,wear,right,0.5,0.0,7
-1,0.44,peele,1.4,0.8944271909999159,strong non-CoRT,made,shark,8,low cloze,The blanket looked like something a child had,hard,0.5,1.5,6.0,True,True,made,right,0.5,7.5,7
-2,0.32,peele,4.5,0.8366600265340753,strong CoRT,attic,married,9,low cloze,"Hearing noises from above, the confused man inspected the",hard,0.5,1.5,6.5,True,False,married,right,0.5,15.0,7
-3,0.71,block_baldwin,4.166666666666667,0.7527726527090809,strong CoRT,time,bear,7,high cloze,During the lecture Jen kept checking the,easy,0.5,1.5,5.5,True,False,bear,right,0.5,22.5,7
+,cloze_probability,dataset,CoRT_mean,CoRT_std,CoRT_descript,target_word,random_word,word_count,cloze_descript,stim,condition_name,stem_word_dur,last_word_dur,trial_dur_correct,display_trial_feedback,trial_type,last_word,hand,iti_dur,key_hand_dict,start_time,trial_dur
+0,0.96,peele,1.75,0.957427107756338,strong non-CoRT,wear,leak,8,high cloze,"Before the gala, Katie couldn't decide what to",easy,0.5,1.5,6.0,True,True,wear,right,0.5,key_hand_dict_binary_right,0.0,7
+1,0.44,peele,1.4,0.8944271909999159,strong non-CoRT,made,shark,8,low cloze,The blanket looked like something a child had,hard,0.5,1.5,6.0,True,True,made,right,0.5,key_hand_dict_binary_right,7.5,7
+2,0.32,peele,4.5,0.8366600265340753,strong CoRT,attic,married,9,low cloze,"Hearing noises from above, the confused man inspected the",hard,0.5,1.5,6.5,True,False,married,right,0.5,key_hand_dict_binary_right,15.0,7
+3,0.71,block_baldwin,4.166666666666667,0.7527726527090809,strong CoRT,time,bear,7,high cloze,During the lecture Jen kept checking the,easy,0.5,1.5,5.5,True,False,bear,right,0.5,key_hand_dict_binary_right,22.5,7

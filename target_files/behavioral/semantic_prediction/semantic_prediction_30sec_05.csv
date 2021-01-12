@@ -1,5 +1,5 @@
-,cloze_probability,dataset,CoRT_mean,CoRT_std,CoRT_descript,target_word,random_word,word_count,cloze_descript,stim,condition_name,stem_word_dur,last_word_dur,trial_dur_correct,display_trial_feedback,trial_type,last_word,hand,iti_dur,start_time,trial_dur
-0,0.72,peele,4.5,0.5773502691896257,strong CoRT,mail,bush,9,high cloze,The postman walked up and handed the man his,easy,0.5,1.5,6.5,True,False,bush,right,0.5,0.0,7
-1,0.33,peele,4.0,0.0,strong CoRT,bang,seagull,9,low cloze,The cargo at the shipyard fell with a loud,hard,0.5,1.5,6.5,True,False,seagull,right,0.5,7.5,7
-2,0.82,peele,1.6,0.8944271909999159,strong non-CoRT,had,mouse,9,high cloze,Claire claimed motherhood was the hardest job she ever,easy,0.5,1.5,6.5,True,True,had,right,0.5,15.0,7
-3,0.35,peele,2.0,1.4142135623730951,strong non-CoRT,thyme,sweat,9,low cloze,The potatoes were seasoned with flakes of rosemary and,hard,0.5,1.5,6.5,True,True,thyme,right,0.5,22.5,7
+,cloze_probability,dataset,CoRT_mean,CoRT_std,CoRT_descript,target_word,random_word,word_count,cloze_descript,stim,condition_name,stem_word_dur,last_word_dur,trial_dur_correct,display_trial_feedback,trial_type,last_word,hand,iti_dur,key_hand_dict,start_time,trial_dur
+0,0.72,peele,4.5,0.5773502691896257,strong CoRT,mail,bush,9,high cloze,The postman walked up and handed the man his,easy,0.5,1.5,6.5,True,False,bush,right,0.5,key_hand_dict_binary_right,0.0,7
+1,0.33,peele,4.0,0.0,strong CoRT,bang,seagull,9,low cloze,The cargo at the shipyard fell with a loud,hard,0.5,1.5,6.5,True,False,seagull,right,0.5,key_hand_dict_binary_right,7.5,7
+2,0.82,peele,1.6,0.8944271909999159,strong non-CoRT,had,mouse,9,high cloze,Claire claimed motherhood was the hardest job she ever,easy,0.5,1.5,6.5,True,True,had,right,0.5,key_hand_dict_binary_right,15.0,7
+3,0.35,peele,2.0,1.4142135623730951,strong non-CoRT,thyme,sweat,9,low cloze,The potatoes were seasoned with flakes of rosemary and,hard,0.5,1.5,6.5,True,True,thyme,right,0.5,key_hand_dict_binary_right,22.5,7

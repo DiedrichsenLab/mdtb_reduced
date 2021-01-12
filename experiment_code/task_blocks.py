@@ -13,7 +13,6 @@ from psychopy import visual, core, event, gui # data, logging
 import experiment_code.constants as consts
 from experiment_code.screen import Screen
 from experiment_code.ttl import ttl
-import experiment_code.constants as const
 
 class Task:
     """
@@ -39,7 +38,8 @@ class Task:
     def instruction_text(self):
         # return None
         hand = self.target_file['hand'][0]
-        key_hand_dict = self.target_file['key_hand_dict'][0]
+        key_hand_dict = self.target_file['key_hand_dict'][0]  # grab name of custom key_hand_dict from target file
+        key_hand_dict = eval(f"consts.{key_hand_dict}")     # use eval() to convert string variable name to actual dictionary
         #return f"{self.task_name} task\n\nUse your {hand} hand\n\nIf true, press {consts.key_hand_dict[hand][True][0]} with {consts.key_hand_dict[hand][True][1]}\nIf false, press {consts.key_hand_dict[hand][False][0]} with {consts.key_hand_dict[hand][False][1]}"
         return f"{self.task_name} task\n\nUse your {hand} hand\n\nIf true, press {key_hand_dict[True][0]} with {key_hand_dict[True][1]}\nIf false, press {key_hand_dict[False][0]} with {key_hand_dict[False][1]}"
 
@@ -65,6 +65,8 @@ class Task:
         self.window.flip()
 
     def get_correct_key(self, trial_index):
+        key_hand_dict = self.target_file['key_hand_dict'][0]  # grab name of custom key_hand_dict from target file
+        key_hand_dict = eval(f"consts.{key_hand_dict}")     # use eval() to convert string variable name to actual dictionary
         row = self.target_file.iloc[trial_index]
         #return consts.key_hand_dict[row['hand']][row['trial_type']][0]
         return key_hand_dict[row['trial_type']][0]

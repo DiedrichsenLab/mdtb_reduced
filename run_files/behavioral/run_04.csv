@@ -1,0 +1,12 @@
+task_name,task_num,num_trials,target_num,num_sec,target_file,start_time,end_time,instruct_dur,feedback_type
+visual_search,1,12,4,30,visual_search_30sec_04.csv,0,35,5,rt
+rest,7,1,,10,rest_10sec.csv,35,45,0,
+theory_of_mind,2,2,4,30,theory_of_mind_30sec_04.csv,45,80,5,acc
+rest,7,1,,10,rest_10sec.csv,80,90,0,
+n_back,3,15,4,30,n_back_30sec_04.csv,90,125,5,rt
+rest,7,1,,10,rest_10sec.csv,125,135,0,
+social_prediction,4,10,4,30,social_prediction_30sec_04.csv,135,170,5,acc
+rest,7,1,,10,rest_10sec.csv,170,180,0,
+semantic_prediction,5,4,4,30,semantic_prediction_30sec_04.csv,180,215,5,rt
+rest,7,1,,10,rest_10sec.csv,215,225,0,
+action_observation,6,12,4,30,action_observation_30sec_04.csv,225,260,5,acc

@@ -1,4 +1,4 @@
-,story,question,filename,condition,response,condition_name,story_dur,question_dur,trial_dur_correct,display_trial_feedback,trial_type,hand,iti_dur,start_time,trial_dur
+,story,question,filename,condition,response,condition_name,story_dur,question_dur,trial_dur_correct,display_trial_feedback,trial_type,hand,iti_dur,key_hand_dict,start_time,trial_dur
 0,"Amy leaves her sister in the library
 while she goes to class. Sometime
 thereafter, Amy's sister leaves the
@@ -6,11 +6,11 @@ library to meet her friend on the other
 side of town. ","Amy returns after class and 
 finds her sister in the library
 
-False or True?",18b,belief,False,belief,10,4,14.5,True,False,left,0.5,0.0,14
+False or True?",18b,belief,False,belief,10,4,14.5,True,False,left,0.5,key_hand_dict_binary_left,0.0,14
 1,"When they were children, Paul and Tom 
 would swing on the trees in their garden. 
 By the time they were teenagers, 
 all of the trees had been chopped down.","Today, there are no more trees
 in the garden
 
-False or True?",11b,belief,True,belief,10,4,14.5,True,True,left,0.5,14.5,14
+False or True?",11b,belief,True,belief,10,4,14.5,True,True,left,0.5,key_hand_dict_binary_left,14.5,14
