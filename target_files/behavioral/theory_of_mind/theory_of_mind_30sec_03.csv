@@ -5,10 +5,10 @@ blond hair. Soon after the picture
 was taken, Laura's braces were removed","Today, Laura has straight teeth
 and long blond hair
 
-False or True?",16p,photo,True,photo,5,5,10.5,True,True,left,0.5,key_hand_dict_binary_left,0.0,10
+False or True?",16p,photo,True,photo,8,5.5,14.0,True,True,left,0.5,key_hand_dict_binary_left,0.0,14
 1,"Maria wakes up early to study
 at the library. Her housemates
 notice that she is not at breakfast
 and presume that she is sleeping","In fact, Maria is studying in the library
 
-False or True?",15b,belief,True,belief,5,5,10.5,True,True,left,0.5,key_hand_dict_binary_left,10.5,10
+False or True?",15b,belief,True,belief,8,5.5,14.0,True,True,left,0.5,key_hand_dict_binary_left,14.5,14

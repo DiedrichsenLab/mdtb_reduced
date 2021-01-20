@@ -5,11 +5,11 @@ no facial hair. Now the man's hair is
 long and gray and so is his beard.  ","Today the length of the man's hair 
 is long.
 
-False or True? ",3p,photo,True,photo,5,5,10.5,True,True,left,0.5,key_hand_dict_binary_left,0.0,10
+False or True? ",3p,photo,True,photo,8,5.5,14.0,True,True,left,0.5,key_hand_dict_binary_left,0.0,14
 1,"A large oak tree stood in front of City 
 Hall from the time the building was built.  
 Last year the tree fell down and was replaced 
 by a stone fountain.","An antique drawing of City Hall 
 shows a fountain in front.
 
-False or True? ",9p,photo,False,photo,5,5,10.5,True,False,left,0.5,key_hand_dict_binary_left,10.5,10
+False or True? ",9p,photo,False,photo,8,5.5,14.0,True,False,left,0.5,key_hand_dict_binary_left,14.5,14
