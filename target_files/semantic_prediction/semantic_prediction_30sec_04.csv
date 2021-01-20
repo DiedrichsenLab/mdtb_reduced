@@ -1,5 +1,0 @@
-,cloze_probability,dataset,CoRT_mean,CoRT_std,CoRT_descript,target_word,random_word,word_count,cloze_descript,stim,condition_name,stem_word_dur,last_word_dur,trial_dur_correct,display_trial_feedback,trial_type,last_word,hand,iti_dur,key_hand_dict,start_time,trial_dur
-0,0.75,peele,4.75,0.5,strong CoRT,duck,mud,9,high cloze,They threw eggs at Barry but he knew to,easy,0.5,1.5,6.5,True,True,duck,right,0.5,key_hand_dict_binary_right,0.0,7
-1,0.4,peele,4.4,1.3416407864998738,strong CoRT,whine,attention,8,low cloze,When the puppies get hungry they start to,hard,0.5,1.5,6.0,True,True,whine,right,0.5,key_hand_dict_binary_right,7.5,7
-2,0.42,peele,1.8,1.3038404810405295,strong non-CoRT,learn,selfcomplicated,9,low cloze,All the teacher wanted was for the kids to,hard,0.5,1.5,6.5,True,False,selfcomplicated,right,0.5,key_hand_dict_binary_right,15.0,7
-3,0.9,block_baldwin,1.8571428571428568,0.6900655593423541,strong non-CoRT,gas,pants,9,high cloze,I would drive but my car is low on,easy,0.5,1.5,6.5,True,False,pants,right,0.5,key_hand_dict_binary_right,22.5,7

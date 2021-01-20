@@ -357,7 +357,7 @@ def _display_feedback_text(feedback_all, screen):
         screen          -   screen objects
     """
     positions = [(-9, -6), (0, -6), (9, -6),
-                (-9, 3), (0, 3)]
+                (-9, 3), (0, 3), (9, 3)]
 
     for position, feedback in zip(positions, feedback_all):
         scoreboard = visual.TextStim(screen.window, text = feedback, color = [-1, -1, -1], pos = position, height = 0.05)

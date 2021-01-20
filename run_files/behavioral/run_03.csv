@@ -1,7 +1,7 @@
 task_name,task_num,num_trials,target_num,num_sec,target_file,start_time,end_time,instruct_dur,feedback_type
 visual_search,1,12,3,30,visual_search_30sec_03.csv,0,35,5,rt
 rest,7,1,,10,rest_10sec.csv,35,45,0,
-theory_of_mind,2,2,3,30,theory_of_mind_30sec_03.csv,45,80,5,acc
+theory_of_mind,2,2,3,30,theory_of_mind_30sec_03.csv,45,80,5,rt
 rest,7,1,,10,rest_10sec.csv,80,90,0,
 n_back,3,15,3,30,n_back_30sec_03.csv,90,125,5,rt
 rest,7,1,,10,rest_10sec.csv,125,135,0,

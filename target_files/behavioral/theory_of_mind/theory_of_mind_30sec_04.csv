@@ -6,7 +6,7 @@ reservation and two other hikers got to the
 cabin first.","When the hikers arrive they see no 
 one in their cabin.
 
-False or True? ",7b,belief,False,belief,10,4,14.5,True,False,left,0.5,key_hand_dict_binary_left,0.0,14
+False or True? ",7b,belief,False,belief,5,5,10.5,True,False,left,0.5,key_hand_dict_binary_left,0.0,10
 1,"Felicity skips school to attend
 a basketball game at the local
 stadium. Unbeknownst to her, she
@@ -15,4 +15,4 @@ parents watch the news that afternoon
 and see her enjoying the game","Felicity's parents think that 
 she is at school
 
-False or True?",26b,belief,True,belief,10,4,14.5,True,True,left,0.5,key_hand_dict_binary_left,14.5,14
+False or True?",26b,belief,True,belief,5,5,10.5,True,True,left,0.5,key_hand_dict_binary_left,10.5,10

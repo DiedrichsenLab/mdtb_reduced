@@ -838,14 +838,14 @@ class TheoryOfMind(Utils):
         super().__init__()
         self.task_name = 'theory_of_mind'
         self.logging_file = 'theory_of_mind.csv'
-        self.story_dur = 7
-        self.question_dur = 6
+        self.story_dur = 8
+        self.question_dur = 5.5
         self.frac = .3
         self.balance_blocks = {'condition_name': ['belief','photo'],'trial_type': [True, False]}
         self.block_dur_secs = 15
         self.num_blocks = 5
         self.tile_block = 1
-        self.trial_dur = 13
+        self.trial_dur = 14
         self.iti_dur = .5
         self.instruct_dur = 5
         self.hand = 'left'
