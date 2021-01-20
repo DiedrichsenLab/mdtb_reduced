@@ -488,6 +488,8 @@ class SemanticPrediction(Task):
 
             # collect response
             wait_time = self.target_file['start_time'][self.trial] + self.target_file['trial_dur_correct'][self.trial]
+            #print(f"Semantic wait time ={wait_time}")
+            #print(f"Semantic clock time = {self.clock.getTime() - t0}")
             self.trial_response = self.get_trial_response(wait_time = wait_time,
                                     trial_index = self.trial, 
                                     start_time = t0, 
@@ -657,17 +659,19 @@ class TheoryOfMind(Task):
     
     def _show_story(self):
         # display story for fixed time                       
-        stim = visual.TextStim(self.window, text=self.story, alignHoriz='center', pos=(0.0,0.0), color=(-1,-1,-1), units='deg')
+        stim = visual.TextStim(self.window, text=self.story, alignText='center', wrapWidth=20, pos=(0.0,0.0), color=(-1,-1,-1), units='deg')
+        stim.text = stim.text
         stim.draw()
         self.window.flip()
         core.wait(self.story_dur)
 
     def _show_stim(self):
-        # display question for fixed time                       
+        # display question for fixed time                   
         stim = visual.TextStim(self.window, text=self.question, pos=(0.0,0.0), color=(-1,-1,-1), units='deg')
+        stim.text = stim.text
         stim.draw()
-        self.window.flip()
-        core.wait(self.question_dur)
+        #self.window.flip()
+        #core.wait(self.question_dur)
     
     def _show_stims_all(self):
         # show story
@@ -696,14 +700,14 @@ class TheoryOfMind(Task):
             # get stims
             self._get_stims()
 
-            # before word is shown: fixation cross hangs on screen for iti_dur
+            # before story is shown: fixation cross hangs on screen for iti_dur
             while self.clock.getTime()-t0 <= self.target_file['start_time'][self.trial]:
                 pass
 
             # collect real_start_time for each block
             self.real_start_time = self.clock.getTime() - t0
 
-            # display stem
+            # display story and question
             self._show_stims_all() 
 
             # Start timer before display
@@ -716,7 +720,7 @@ class TheoryOfMind(Task):
                                     start_time = t0, 
                                     start_time_rt = t2)
 
-           # update response
+            # update response
             self.update_trial_response()
 
             # display trial feedback
@@ -782,22 +786,12 @@ class Rest(Task):
         return rDf
 
 
-#TASK_MAP = {
-#    "visual_search": VisualSearch,
-#    "n_back": NBack,
-#    "social_prediction": SocialPrediction,
-#    "semantic_prediction": SemanticPrediction,
-#    "action_observation": ActionObservation,
-#    "theory_of_mind": TheoryOfMind,
-#    "rest": Rest,
-#}
-
 TASK_MAP = {
     "visual_search": VisualSearch,
-    "theory_of_mind": TheoryOfMind,
     "n_back": NBack,
     "social_prediction": SocialPrediction,
     "semantic_prediction": SemanticPrediction,
     "action_observation": ActionObservation,
+    "theory_of_mind": TheoryOfMind,
     "rest": Rest,
-    }
+}

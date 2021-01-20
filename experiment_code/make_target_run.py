@@ -838,14 +838,14 @@ class TheoryOfMind(Utils):
         super().__init__()
         self.task_name = 'theory_of_mind'
         self.logging_file = 'theory_of_mind.csv'
-        self.story_dur = 10
-        self.question_dur = 4
+        self.story_dur = 7
+        self.question_dur = 6
         self.frac = .3
         self.balance_blocks = {'condition_name': ['belief','photo'],'trial_type': [True, False]}
         self.block_dur_secs = 15
         self.num_blocks = 5
         self.tile_block = 1
-        self.trial_dur = 14
+        self.trial_dur = 13
         self.iti_dur = .5
         self.instruct_dur = 5
         self.hand = 'left'
@@ -860,15 +860,14 @@ class TheoryOfMind(Utils):
 
     def _create_new_columns(self, dataframe):
         # add condition column
-        # dataframe['condition_name'] = dataframe['condition'].apply(lambda x: self.balance_blocks['condition_name'][x])
         dataframe['condition_name'] = dataframe['condition']
         dataframe['story_dur'] = self.story_dur
         dataframe['question_dur'] = self.question_dur
         dataframe['trial_dur_correct'] = dataframe['story_dur'] + self.iti_dur + dataframe['question_dur']
         dataframe['display_trial_feedback'] = self.display_trial_feedback
         
-        responses = self.balance_blocks['trial_type']
-        dataframe['trial_type'] = dataframe['response'].apply(lambda x: True if x==responses[0] else False)
+        resp = self.balance_blocks['trial_type']
+        dataframe['trial_type'] = dataframe['response'].apply(lambda x: True if x==resp[0] else False)
 
         return dataframe
 
@@ -1014,10 +1013,8 @@ class MakeFiles:
             counterbalance_runs (bool): counterbalance block order across runs
     """
     def __init__(self):
-        self.task_names = ['visual_search', 'theory_of_mind', 'n_back', 'social_prediction', 'semantic_prediction', 'action_observation']
-        self.feedback_types = ['rt', 'acc', 'rt', 'acc', 'rt', 'acc']
-        #self.task_names = ['visual_search','theory_of_mind']
-        #self.feedback_types = ['rt','acc']
+        self.task_names = ['visual_search', 'n_back', 'social_prediction', 'semantic_prediction', 'action_observation', 'theory_of_mind']
+        self.feedback_types = ['rt', 'rt', 'acc', 'rt', 'acc', 'rt']
         self.run_name_prefix = 'run'
         self.tile_run = 1
         self.instruct_dur = 5
@@ -1204,23 +1201,13 @@ class MakeFiles:
         # create run files
         self.make_runfiles()
 
-#TASK_MAP = {
-#    "visual_search": VisualSearch,
-#    "n_back": NBack,
-#    "social_prediction": SocialPrediction,
-#    "semantic_prediction": SemanticPrediction,
-#    "action_observation": ActionObservation,
-#    "theory_of_mind": TheoryOfMind,
-#    "rest": Rest,
-#    }
-
 TASK_MAP = {
     "visual_search": VisualSearch,
-    "theory_of_mind": TheoryOfMind,
     "n_back": NBack,
     "social_prediction": SocialPrediction,
     "semantic_prediction": SemanticPrediction,
     "action_observation": ActionObservation,
+    "theory_of_mind": TheoryOfMind,
     "rest": Rest,
     }
 
