@@ -211,7 +211,8 @@ class VisualSearch(Task):
             if self.target_file['display_trial_feedback'][self.trial] and self.response_made:
                 self.display_trial_feedback(correct_response = self.correct_response)
             else:
-                self.screen.fixation_cross()
+                #self.screen.fixation_cross()
+                self.display_trial_feedback(correct_response = self.correct_response)
 
             self.screen_quit()
 
@@ -276,7 +277,8 @@ class NBack(Task):
             if self.target_file['display_trial_feedback'][self.trial] and self.response_made:
                 self.display_trial_feedback(correct_response = self.correct_response)
             else:
-                self.screen.fixation_cross()
+                #self.screen.fixation_cross()
+                self.display_trial_feedback(correct_response = self.correct_response)
 
             # option to quit screen
             self.screen_quit()
@@ -402,7 +404,8 @@ class SocialPrediction(Task):
             if self.target_file['display_trial_feedback'][self.trial] and response_made:
                 self.display_trial_feedback(correct_response = correct_response)
             else:
-                self.screen.fixation_cross()
+                #self.screen.fixation_cross()
+                self.display_trial_feedback(correct_response = self.correct_response)
 
             # get response event
             self.trial_response = self._get_response_event(response_made = response_made)
@@ -502,7 +505,8 @@ class SemanticPrediction(Task):
             if self.target_file['display_trial_feedback'][self.trial] and self.response_made:
                 self.display_trial_feedback(correct_response = self.correct_response) 
             else:
-                self.screen.fixation_cross()
+                #self.screen.fixation_cross()
+                self.display_trial_feedback(correct_response = self.correct_response)
 
             self.screen_quit()
 
@@ -627,7 +631,8 @@ class ActionObservation(Task):
             if self.target_file['display_trial_feedback'][self.trial] and response_made:
                 self.display_trial_feedback(correct_response = correct_response)
             else:
-                self.screen.fixation_cross()
+                #self.screen.fixation_cross()
+                self.display_trial_feedback(correct_response = self.correct_response)
 
             # get response event
             self.trial_response = self._get_response_event(response_made = response_made)
@@ -725,7 +730,8 @@ class TheoryOfMind(Task):
             if self.target_file['display_trial_feedback'][self.trial] and self.response_made:
                 self.display_trial_feedback(correct_response = self.correct_response) 
             else:
-                self.screen.fixation_cross()
+                #self.screen.fixation_cross()
+                self.display_trial_feedback(correct_response = self.correct_response)
 
             self.screen_quit()
 
