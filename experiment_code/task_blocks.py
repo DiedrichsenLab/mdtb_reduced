@@ -668,13 +668,20 @@ class TheoryOfMind(Task):
         stim.text = stim.text  # per PsychoPy documentation, this should reduce timing delays in displaying text
         stim.draw()
         self.window.flip()
-        core.wait(self.story_dur)
+        #core.wait(self.story_dur)
+        if self.ttl_flag: # wait for ttl pulse
+                while ttl.clock.getTime()-self.word_start <= self.stem_story_dur:
+                    ttl.check()
+            else: # do not wait for ttl pulse
+                while self.clock.getTime()-self.word_start <= self.stem_story_dur:
+                    pass
 
     def _show_stim(self):
         # display question for fixed time                   
         stim = visual.TextStim(self.window, text=self.question, pos=(0.0,0.0), color=(-1,-1,-1), units='deg')
         stim.text = stim.text  # per PsychoPy documentation, this should reduce timing delays in displaying text
         stim.draw()
+        self.window.flip()
     
     def _show_stims_all(self):
         # show story
